@@ -1,0 +1,197 @@
+:root{
+    --cor-de-fundo-prymary:#000;
+    --cor-de-fundo-secundary:#494949d5;
+    --cor-primary:#00ff08;
+    --cor-secundary:;
+    --cor-text-primary:#fff;
+    --cor-text-secundary:#cfcfcf;
+    --cor-text-tertiary:#181717;
+    --cor-link-primary:#5a5a5ac9;
+    --font-family-title:'Spicy Rice';
+
+
+    --font-family-primary:'Bangers';
+
+    --font-family-secundary:;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-de-fundo-prymary);
+    color: var(--cor-text-primary);
+    height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 2rem 0;
+    font-size: 1.2rem;
+}
+
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+nav ul li > a{
+    color: var(--cor-link-primary);
+    transition: .3s;
+}
+
+header a:hover{
+    color: var(--cor-text-primary);
+    transform: scale(1.3);
+}
+
+.btn-contato > a{
+    color: #000;
+    background-color: var(--cor-primary);
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.btn-contato > a:hover{
+    box-shadow: 0px 0px 10px #00ff08;
+    color: #000;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hero{
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.text-hero{
+    flex-direction: column;
+    align-items: start;
+    max-width: 800px;
+    font-size: 1.8rem;
+}
+
+.text-hero p{
+    color: var(--cor-text-secundary);
+    margin: 40px  0;
+}
+
+section{
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+section > h2{
+    margin: 6rem 0;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: center;
+    gap: 25px;
+}
+
+.temas{
+    height: 26vh;
+    text-align: center;
+    border-radius: 10px;
+    filter: blur(4px);
+}
+
+.temas:hover{
+    box-shadow: 0px 0px 10px #00ff0850;
+    filter: blur(0px);
+    cursor: pointer;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    gap: 25px;
+    margin: 4rem 0;
+}
+
+.cardProjeto {
+    height: 350px;
+    font-size: 1rem;
+    filter: opacity(.4);
+}
+
+.cardProjeto:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.cardProjeto:nth-child(odd):hover {
+    flex-direction: row-reverse;
+    box-shadow: -8px 8px 25px #00ff087c;
+}
+
+.cardProjeto:nth-child(even) {
+    flex-direction: row;
+}
+
+.cardProjeto:hover {
+    filter: opacity(.8);
+}
+
+.cardProjeto:nth-child(even):hover {
+    flex-direction: row;
+    box-shadow: 8px 8px 25px #00ff087c;
+}
+
+.imgProjeto {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+
+.card-text h4, .card-text p {
+    margin: 20px 5px;
+    text-align: justify;
+}
+
+.btn{
+    margin: 10px;
+    padding: 6px;
+}
+
+
