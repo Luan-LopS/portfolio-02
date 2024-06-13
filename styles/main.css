@@ -223,11 +223,19 @@ section > h2{
     margin: 4rem 0;
 }
 
-.card{
-    width: 80%;
+.cardContent {
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-secundary);
+    color: var(--cor-text-primary);
+    display: none;
+    border-radius: 5px;
 }
 
-/* Esconda os detalhes dos cartões por padrão */
+.card {
+    position: relative; /* Para que .cardContent possa ser posicionado corretamente */
+}
+
 .details {
     display: none;
 }
+
