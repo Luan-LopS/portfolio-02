@@ -8,10 +8,6 @@
     --cor-text-tertiary:#181717;
     --cor-link-primary:#5a5a5ac9;
     --font-family-title:'Spicy Rice';
-
-
-    --font-family-primary:'Bangers';
-
     --font-family-secundary:;
 }
 
@@ -110,11 +106,11 @@ header a:hover{
 section{
     flex-direction: column;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 section > h2{
-    margin: 6rem 0;
+    margin: 2rem 0;
 }
 
 .about{
@@ -137,61 +133,17 @@ section > h2{
     cursor: pointer;
 }
 
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, 48%);
-    gap: 25px;
-    margin: 4rem 0;
+.portfolio {}
+
+.carolusel{
+    gap: 10px;
 }
 
-.cardProjeto {
-    height: 350px;
-    font-size: 1rem;
-    filter: opacity(.4);
+.card{
+    width: 80%;
 }
 
-.cardProjeto:nth-child(odd) {
-    flex-direction: row-reverse;
+/* Esconda os detalhes dos cartões por padrão */
+.details {
+    display: none;
 }
-
-.cardProjeto:nth-child(odd):hover {
-    flex-direction: row-reverse;
-    box-shadow: -8px 8px 25px #00ff087c;
-}
-
-.cardProjeto:nth-child(even) {
-    flex-direction: row;
-}
-
-.cardProjeto:hover {
-    filter: opacity(.8);
-}
-
-.cardProjeto:nth-child(even):hover {
-    flex-direction: row;
-    box-shadow: 8px 8px 25px #00ff087c;
-}
-
-.imgProjeto {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card-text {
-    flex-direction: column;
-    padding: 10px;
-    width: 50%;
-}
-
-.card-text h4, .card-text p {
-    margin: 20px 5px;
-    text-align: justify;
-}
-
-.btn{
-    margin: 10px;
-    padding: 6px;
-}
-
-
