@@ -1,7 +1,7 @@
 function displayDetails(card) {
     var cardContent = document.querySelector('.cardContent');
-    cardContent.style.display='block'
-    cardContent.innerHTML = card.innerHTML;
+    cardContent.innerHTML = card.querySelector('.details').innerHTML
+    cardContent.style.display='flex'
 }
 
 function displayNone() {
