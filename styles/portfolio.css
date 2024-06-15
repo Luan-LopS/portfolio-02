@@ -1,0 +1,69 @@
+.portfolio{
+    height: 88vh;
+}
+
+.card{
+    position: relative;
+    width: 16rem;
+    height: 35rem;
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px #15ff00;
+}
+
+.cardText:hover ~ #projeto1 {
+    filter: blur(4px); /* Aplica o filtro de desfoque à imagem quando .cardText está em hover */
+}
+
+.cardImg{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.cardText{
+    position: absolute;
+    top: 0;
+    display: none;
+    text-align: justify;
+    z-index: 2;
+}
+
+.card:hover .cardText{
+    display: inline-block;
+}
+
+.btn{
+    padding-top: 5rem;
+    justify-content: space-around;
+    align-items: flex-end
+}
+
+#projeto1{
+    background-image: url(../imagens/html-template-66149.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+#projeto2{
+    background-image: url(../imagens/html-template-66149.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+#projeto3{
+    background-image: url(../imagens/html-template-66149.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+#projeto4{
+    background-image: url(../imagens/html-template-66149.jpg);
+    width: 100%;
+    height: 100%;
+}

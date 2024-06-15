@@ -1,0 +1,89 @@
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 8rem 2rem;
+    height: 83vh;
+    margin-top: 3rem;
+    align-content: stretch;
+    align-items: end;
+}
+
+.jornada{
+    grid-column: span 2;
+}
+
+.theme{
+    font-size: 1.1rem;
+    padding: 5px;
+    flex-direction: column;
+    position: relative;
+}
+
+.img-about{
+    height: 300px;
+    margin: 0 auto;
+    background-color: #77b6778a;
+    border: 12px solid #00ff08;
+    border-radius: 100%;
+}
+
+.title{
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.6rem;
+}
+
+.theme > .hr{
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    width: 0;
+    border-bottom: #00ff08 4px solid;
+    transition: width 1s ease;
+    animation: expand 4s ease;
+}
+
+.theme:hover > .hr{
+    width: 100%;
+}
+
+@keyframes expand {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.theme > p, .theme ul{
+    margin-top: .2rem;
+}
+
+
+.habilit{
+    flex-direction: column;
+    align-items: start;
+}
+
+.habilit > div{
+    margin-right: 2rem;
+}
+
+.stacks > ul li i{
+    padding: 0 2px;
+    font-size: 1.5rem;
+}
+
+
+.theme h3 > .bi{
+    font-size: 1.5rem;
+    padding-left: 15rem;
+}
+
+.bi{
+    color: #00ff08;
+}
