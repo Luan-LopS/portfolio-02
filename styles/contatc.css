@@ -1,0 +1,27 @@
+.contact{
+    justify-content: space-around;
+    height: 78vh;
+}
+
+form{
+    width: 35rem;
+    height: 30rem;
+    flex-direction: column;
+}
+
+label, input, textarea, button{
+    width: 100%;
+    resize: none;
+    height: 1.8rem;
+}
+
+textarea{
+    height: 6rem;
+}
+
+.um{
+    width: 35rem;
+    height: 30rem;
+    font-size: 6rem;
+    justify-content: space-around;
+}
