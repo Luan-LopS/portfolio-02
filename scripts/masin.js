@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function(e) {
     // Obtém a URL da página atual
     var url = window.location.href;
 
