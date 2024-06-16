@@ -23,8 +23,8 @@
 .img-about{
     height: 300px;
     margin: 0 auto;
-    background-color: #77b6778a;
-    border: 12px solid #00ff08;
+    background-color: #4a574a8a;
+    border: 6px solid #00ff08;
     border-radius: 100%;
 }
 
@@ -40,7 +40,7 @@
     width: 0;
     border-bottom: #00ff08 4px solid;
     transition: width 1s ease;
-    animation: expand 2s ease;
+    animation: expand .5s reverse;
 }
 
 .theme:hover > .hr{
@@ -61,6 +61,8 @@
 
 .theme > p, .theme ul{
     margin-top: .2rem;
+    color: #999999;
+
 }
 
 
@@ -86,4 +88,8 @@
 
 .bi{
     color: #00ff08;
+}
+
+.estudo{
+    color: #999999;
 }

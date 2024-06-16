@@ -1,27 +1,66 @@
+section > h2{
+    margin: 4rem 0;
+    text-align: center;
+}
+
 .contact{
-    justify-content: space-around;
-    height: 78vh;
+    flex-direction: column;
+    align-items: center;
 }
 
 form{
-    width: 35rem;
+    width: 41rem;
     height: 30rem;
     flex-direction: column;
 }
 
-label, input, textarea, button{
+label, input, textarea{
     width: 100%;
     resize: none;
     height: 1.8rem;
+    border-radius: 1px;
+    color: #999999;
+}
+
+input, textarea{
+    margin-bottom: 1rem;
+    background-color: #353333b9;
+    border: none;
+}
+
+input:focus,textarea:focus{
+    outline: 0.1px solid #00ff0880;
 }
 
 textarea{
-    height: 6rem;
+    height: 8rem;
 }
 
-.um{
-    width: 35rem;
-    height: 30rem;
-    font-size: 6rem;
-    justify-content: space-around;
+.linksContact{
+    width: 40rem;
+    height: 8rem;
+}
+
+.linksContact ul{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.linksContact ul li > a{
+    font-size: 1rem;
+    color: #999999;
+}
+
+.linksContact ul li > a i{
+    font-size: 3rem;
+}
+
+.btn-form{
+    width: 100%;
+    height: 8%;
+    background-color: #00ff08;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
 }

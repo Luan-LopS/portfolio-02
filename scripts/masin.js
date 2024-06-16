@@ -1,11 +1,20 @@
-function displayDetails(card) {
-    var cardContent = document.querySelector('.cardContent');
-    cardContent.innerHTML = card.querySelector('.details').innerHTML
-    cardContent.style.display='flex'
-}
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtém a URL da página atual
+    var url = window.location.href;
 
-function displayNone() {
-    var cardContent = document.querySelector('.cardContent');
-    cardContent.style.display='none'
-    cardContent.innerHTML = '';
-}
+    // Verifica qual link do menu tem o mesmo href da página atual
+    document.querySelectorAll('header .container nav ul li a').forEach(function(item) {
+        console.log(item)
+        console.log(url)
+        item.getAttribute('href')
+        if (url == item) {
+            item.classList.add('active');
+        }
+    });
+});
+
+
+
+
+// wix modelos de sites para o portfolio 
+//https://pt.wix.com/website/templates/html/all/6
