@@ -4,19 +4,57 @@
 
 .card{
     position: relative;
-    width: 16rem;
+    width: 20rem;
     height: 35rem;
     margin: 2rem;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 10px;    
+    opacity: .6;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+}
+
+.tecs ul{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tecs ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.tecs ul li i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
 }
 
 .card:hover{
-    box-shadow: 0 0 10px #15ff00;
+    box-shadow: 2px 2px 15px #15ff00;
 }
 
-.cardText:hover ~ #projeto1 {
-    filter: blur(4px); /* Aplica o filtro de desfoque à imagem quando .cardText está em hover */
+.cardText {
+    position: absolute;
+    top: 0;
+    display: none;
+    z-index: 2;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.767);
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.cardText h3{
+    padding-bottom: 10px;
 }
 
 .cardImg{
@@ -25,22 +63,10 @@
     display: inline-block;
 }
 
-.cardText{
-    position: absolute;
-    top: 0;
-    display: none;
-    text-align: justify;
-    z-index: 2;
-}
-
-.card:hover .cardText{
-    display: inline-block;
-}
-
 .btn{
-    padding-top: 5rem;
+    padding: 1.5rem 0;
     justify-content: space-around;
-    align-items: flex-end
+    font-size: .8rem;
 }
 
 #projeto1{
@@ -54,16 +80,35 @@
     background-image: url(../imagens/html-template-66149.jpg);
     width: 100%;
     height: 100%;
+    z-index: 1; 
+
 }
 
 #projeto3{
     background-image: url(../imagens/html-template-66149.jpg);
     width: 100%;
     height: 100%;
+    z-index: 1; 
+
 }
 
 #projeto4{
     background-image: url(../imagens/html-template-66149.jpg);
     width: 100%;
     height: 100%;
+    z-index: 1; 
+
+}
+
+.card:hover .cardText {
+    display: block;
+    opacity: 1;
+}
+
+.card:hover #projeto1,
+.card:hover #projeto2,
+.card:hover #projeto3,
+.card:hover #projeto4 {
+    filter: blur(4px); 
+    transition: filter 0.3s ease; 
 }

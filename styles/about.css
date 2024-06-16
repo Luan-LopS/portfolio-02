@@ -40,7 +40,7 @@
     width: 0;
     border-bottom: #00ff08 4px solid;
     transition: width 1s ease;
-    animation: expand 4s ease;
+    animation: expand 2s ease;
 }
 
 .theme:hover > .hr{
