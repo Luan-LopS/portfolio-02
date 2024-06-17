@@ -1,3 +1,10 @@
+section > h2{
+    margin: 5rem  0;
+}
+
+section article header{
+    padding: .2rem 0 .8rem;
+}
 
 .card{
     position: relative;
@@ -7,11 +14,6 @@
     overflow: hidden;
     border-radius: 10px;    
     opacity: .6;
-}
-
-footer{
-    position: relative;
-    bottom: 0;
 }
 
 .tecs ul{
@@ -48,15 +50,27 @@ footer{
     width: 100%;
     height: 100%;
     transition: opacity 0.3s ease;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .cardText h3{
     padding-bottom: 10px;
+    text-align: center;
 }
 
-.cardText p{
+.cardText p,
+.cardText ol li{
     text-align: justify;
+}
+
+.cardText p,
+.cardText ol{
+    text-align: justify;
+    padding: 10px 0;
+}
+
+.cardText ol li{
+    line-height: 1rem;
 }
 
 .cardImg{
@@ -113,4 +127,15 @@ footer{
 .card:hover #projeto4 {
     filter: blur(5px); 
     transition: filter 0.3s ease; 
+}
+
+article ol{
+    counter-reset: mynum;
+}
+
+article ol li::before{
+    content: counter(mynum) ": ";
+    counter-increment: mynum;
+    font-weight: bold;
+    color: #15ff00;
 }

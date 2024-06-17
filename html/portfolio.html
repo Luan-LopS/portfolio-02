@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="../styles/portfolio.css">
 
     <!---font--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,24 +40,31 @@
         </header>
         
         <section class="container flex">
-            <h2>Alguns dos meu projetos</h2>
-            <article class="portfolio flex">
+            <h2>Principais <span>projetos</span>  desenvolvidos</h2>
+
+            <article class="flex portfolio">
                 <div class="card">
                     <div id="projeto1"></div>
                     <div class="cardText" >
                         <header class="tecs">
                             <ul class="flex">
-                                <li><i class="fa-brands fa-html5"></i>HTML</li>
-                                <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
-                                <li><i class="fa-brands fa-js"></i>JavaScript</li>
+                                <li><i class="fa-brands fa-python"></i>Python</li>
                             </ul>
                         </header>
                         <article>
-                            <h3>Lorem ipsum dolor sit.</h3>
+                            <h3> Altomatização<span> para estração de alertas</span> do Zabbix</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                 elit. Saepe eius ex earum est quaerat vel alias natus, ipsum totam esse.
+                                Desenvolvi uma altomatização de extração de um arquivo.csv que é utilizado na 
+                                confecção de um excel para realização da Dayle. Este escripe excuta as tarefas:
                             </p>
+                            <ol>
+                                <li>Iniciar uma interface graficar para realizar o login passando usuario e senha.</li>
+                                <li>Com usuario e senha o executavel abre o navegador e realizar o login, após isso
+                                    coloquei um try para verificar se foi realizado  o login caso não pede denovo o usuario
+                                    e senha.</li>
+                                <li>Solgin com sucesso é extraido o csv</li>
+                                <li>Após isso é consumido o csv pelo excel e tratado e estilizado conforme o necessario.</li>
+                            </ol>
                             <div class="btn flex">
                                 <div class="btn-contato"><a href="">GitHub</a></div>
                                 <div class="btn-contato"><a href="">deploy</a></div>
@@ -71,11 +84,19 @@
                                 </ul>
                             </header>
                             <article>
-                                <h3>Lorem ipsum dolor sit.</h3>
+                                <h3><span>Monica</span> Tatuadora</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                     elit. Saepe eius ex earum est quaerat vel alias natus, ipsum totam esse.
+                                    Desenvolvi uma landpage para minha querida Mae, que surpreendentemente é tatuadora,
+                                    o seu site foi desenvolvido:
                                 </p>
+                                <ol>
+                                    <li>Amor e carrinho kkk alem disso:</li>
+                                    <li>buscamos por um layout simples não muito poluido</li>
+                                    <li>Usei o Gullp para fazer a compactação das imagens de suas fotos e minificação
+                                        do JavaScript e Scss.</li>
+                                    <li>Utilizei ulgumas funções do jquery e do bootstrap</li>
+                                    <li>Tendei otimizar a tag para ajudar com SO da pagina</li>
+                                </ol>
                                 <div class="btn flex">
                                     <div class="btn-contato"><a href="">GitHub</a></div>
                                     <div class="btn-contato"><a href="">deploy</a></div>

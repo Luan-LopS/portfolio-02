@@ -2,15 +2,15 @@
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    gap: 8rem 2rem;
+    gap: 3rem 2rem;
     height: 83vh;
     margin-top: 3rem;
-    align-content: stretch;
-    align-items: end;
+    align-content: space-evenly;
+    align-items: center;
 }
 
 .jornada{
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .theme{
@@ -18,10 +18,20 @@
     padding: 5px;
     flex-direction: column;
     position: relative;
+    text-align: justify;
+}
+
+.theme > p, .theme ul{
+    margin-top: .2rem;
+    color: #999999;
+}
+
+.theme:hover{
+    color: #fff;
 }
 
 .img-about{
-    height: 300px;
+    height: 200px;
     margin: 0 auto;
     background-color: #4a574a8a;
     border: 6px solid #00ff08;
@@ -59,13 +69,6 @@
     }
 }
 
-.theme > p, .theme ul{
-    margin-top: .2rem;
-    color: #999999;
-
-}
-
-
 .habilit{
     flex-direction: column;
     align-items: start;
@@ -75,11 +78,18 @@
     margin-right: 2rem;
 }
 
+.stacks{
+    margin-bottom: 1.2rem;
+}
+
 .stacks > ul li i{
-    padding: 0 2px;
     font-size: 1.5rem;
 }
 
+.stacks > ul li {
+    padding: 0 8px;
+    font-size: 1.2rem;
+}
 
 .theme h3 > .bi{
     font-size: 1.5rem;
