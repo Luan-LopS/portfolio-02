@@ -3,6 +3,14 @@
         display: none;
     }
 
+    header .container{
+        flex-direction: column;
+    }
+
+    header .container nav{
+        margin-top: 2rem;
+    }
+
    .container{
         width: 80%;
    }
@@ -40,7 +48,7 @@
     }
 
     .portfolio{
-        display: inline;0
+        display: inline;
     }
 
     .port{
@@ -48,3 +56,4 @@
     }
 
 }
+

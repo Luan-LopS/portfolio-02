@@ -59,6 +59,10 @@ header > .container{
     justify-content: space-between;
 }
 
+header .menu{
+    display: none;
+}
+
 header nav ul{
     display: flex;
     justify-content: space-between;
@@ -210,4 +214,6 @@ section > h2{
 h1 span, h2 span,h3 span, p span{
     color: #00ff08;
 }
+
+
 
