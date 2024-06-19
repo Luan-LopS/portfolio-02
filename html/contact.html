@@ -11,6 +11,9 @@
     <script src="https://kit.fontawesome.com/6f9ded4e50.js" crossorigin="anonymous"></script>
 
 
+
+
+
     <!---font--->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +30,7 @@
         <header>
             <div class="container">
                 <h2>Luan</h2>
+                <i class="menu fa-solid fa-bars"></i>
                 <nav>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
@@ -47,28 +51,31 @@
 
                 <div class="linksContact">
                     <ul class="flex">
-                        <li><a href="https:linkedin.com/in/luanls" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/Luan-LopS" target="_blank" ><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="luam10@hotmail.com.br" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-                        <li><a href="41998184071" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="https:linkedin.com/in/luanls" target="_blank" rel="noopener-noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/Luan-LopS" target="_blank" rel="noopener-noreferrer"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="mailto:luam10@hotmail.com.br" target="_blank" rel="noopener-noreferrer"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="https://wa.me/5541998184071" target="_blank" rel="noopener-noreferrer"><i class="fa-brands fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
 
                 <h2>E deixe uma <span>sujestão</span> de melhoria</h2>
 
                 <form action="" class="flex">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name">
-
-                    <label for="assunto">Assunto:</label>
-                    <input type="text" id="assunto">
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
-
-                    <label for="sugestao">Deixe sua sugestão:</label>
-                    <textarea id="sugestao"></textarea>
-                    <div class="btn-form"><a href="">Enviar</a></div>
+                    <fieldset>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="nome" required>
+    
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="sugestao">Deixe sua sugestão:</label>
+                        <textarea id="sugestao" name="sugestao" required></textarea>
+                        <button class="btn-form" type="submit">Enviar</button>
+                    
+                    </fieldset>
                 </form>
 
                 
@@ -77,9 +84,11 @@
 
     </div>
 
-
-    
-    <script src="../scripts/masin.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../scripts/jquery.validate.min.js"></script>
+    <script src="../scripts/messages_pt_BR.min.js"></script>
+    <script src="../scripts/main.js"></script>
 
 </body>
 </html>

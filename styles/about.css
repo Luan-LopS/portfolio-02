@@ -20,6 +20,11 @@
     flex-direction: column;
     position: relative;
     text-align: justify;
+    margin: 1rem 0;
+}
+
+.theme2{
+    text-align: center;
 }
 
 .theme > p, .theme ul{

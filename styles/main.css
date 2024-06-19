@@ -131,6 +131,7 @@ header nav ul li a.active{
     width: 20rem;
     border-radius: 50%;
     box-shadow:  0px 0px 10px #00ff0865;
+    z-index: 0;
 }
 
 .imgHero {
