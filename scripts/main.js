@@ -30,9 +30,9 @@ $(document).ready(function(){
         },
         messages:{
             nome: 'Por favor Insira o seu nome  <br>',
-            assunto: 'faltou este campo <br>',
-            email: 'Flatou o email<br>',
-            sugestao: 'este campo é o mais importante por favor colabore<br>'
+            assunto: 'Faltou este campo <br>',
+            email: 'Faltou o email<br>',
+            sugestao: 'Este campo é o mais importante por favor colabore<br>'
         }
     })
 

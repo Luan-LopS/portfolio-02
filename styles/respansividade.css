@@ -26,6 +26,10 @@
         text-align: center;
     }
 
+    .text-hero p {
+        text-align:justify;
+    }
+
     .igmcontent {
         margin-bottom: 2rem;
     }
@@ -53,6 +57,17 @@
 
     form fieldset{
         width: 100%;
+    }
+
+    .btn{
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .btn-contato span, .btn-baixar span{
+        display: none;
     }
 
 }
@@ -92,6 +107,52 @@
     
     header nav ul li a.active{
         transform: scale(1);
+    }
+
+    .btn-contato > a, .btn-baixar > a{
+        width: 200px;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .themeEduca{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px){
+    body{
+        font-size: .7rem;
+    }
+
+    .theme{
+        font-size: 1rem;
+    }
+
+    .text-hero{
+        font-size: 1rem;
+    }
+
+    .btn-contato>a, .btn-baixar > a{
+        width: 145px;
+        font-size: .9rem;
+    }
+
+    .igmcontent{
+        width: 15rem;
+        height: 15rem;
+    }
+  
+    .imgHero > img{
+        width: 26rem;
+        height: 16.1rem;
+        position: relative;
+        left: -8rem;
     }
 
 }
