@@ -1,5 +1,5 @@
 :root{
-    --cor-de-fundo-prymary:#000;
+    --cor-de-fundo-prymary:#000000;
     --cor-de-fundo-secundary:#494949d5;
     --cor-primary:#00ff08;
     --cor-secundary:;
@@ -17,15 +17,18 @@
     box-sizing: border-box;
 }
 
-body{
+html{
     background-color: var(--cor-de-fundo-prymary);
+}
+
+body{
     color: var(--cor-text-primary);
     height: 100vh;
     font-family: var(--font-text-secundary);
 }
 
 h1,h2, h3, h4{
-    font-family: var(--cor-de-fundo-secundary);
+    font-family: var(--font-text-secundary);
     font-weight: 900;
 }
 

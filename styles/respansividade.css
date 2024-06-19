@@ -1,0 +1,50 @@
+@media (max-width: 991.98px) {
+    header .container .btn-contato{
+        display: none;
+    }
+
+
+   .container{
+    width: 80%;
+   }
+
+   .hero{
+    margin-top: 3rem;
+    flex-direction: column-reverse;
+    }
+
+    .text-hero{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .igmcontent {
+        margin-bottom: 2rem;
+    }
+
+    .about{
+        grid-template-columns: auto;
+        height: auto;
+    }
+
+    .about >*{
+        grid-column: span 2;
+    }
+
+    .theme{
+        text-align: center;
+    }
+
+    .img-about{
+        display: none;
+    }
+
+    .portfolio{
+        display: inline;
+    }
+
+    .port{
+        text-align: center;
+    }
+
+}
