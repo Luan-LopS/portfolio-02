@@ -17,11 +17,8 @@
     box-sizing: border-box;
 }
 
-html{
-    background-color: var(--cor-de-fundo-prymary);
-}
-
 body{
+    background-color: var(--cor-de-fundo-prymary);
     color: var(--cor-text-primary);
     height: 100vh;
     font-family: var(--font-text-secundary);
