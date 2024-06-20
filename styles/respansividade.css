@@ -109,7 +109,8 @@
         transform: scale(1);
     }
 
-    .btn-contato > a, .btn-baixar > a{
+    .hero>.btn-contato > a, 
+    .btn-baixar > a{
         width: 200px;
     }
 
@@ -123,22 +124,19 @@
         width: 100%;
     }
 
-}
-
-@media (max-width: 500px){
-    body{
-        font-size: .7rem;
-    }
-
     .theme{
         font-size: 1rem;
+    }
+
+    .habilit{
+        overflow: hidden;
     }
 
     .text-hero{
         font-size: 1rem;
     }
 
-    .btn-contato>a, .btn-baixar > a{
+    .hero>.btn-contato > a, .btn-baixar > a{
         width: 145px;
         font-size: .9rem;
     }

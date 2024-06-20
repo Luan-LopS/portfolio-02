@@ -201,7 +201,6 @@ section > h2{
     cursor: pointer;
     border-radius: 20px;
     transition: .5s;
-
 }
 
 .btn-baixar > a:hover{
