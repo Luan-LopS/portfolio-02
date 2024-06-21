@@ -60,8 +60,14 @@
 
                 <h2>E deixe uma <span>sujestão</span> de melhoria</h2>
 
-                <form action="/enviar" method="POST" class="flex">
-                    <fieldset>
+                <form action="https://formsubmit.co/contatodevluan@gmail.com" method="POST" class="flex">
+                   
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/contact.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="Obrigado pelo contato, assim que possivel retornarei.">
+
+
+
                         <label for="name">Nome:</label>
                         <input type="text" id="name" name="nome" required autocomplete="off">
     
@@ -74,8 +80,7 @@
                         <label for="sugestao">Deixe sua sugestão:</label>
                         <textarea id="sugestao" name="sugestao" required></textarea>
                         <button class="btn-form" type="submit">Enviar</button>
-                    
-                    </fieldset>
+        
                 </form>
 
                 
