@@ -26,6 +26,7 @@ app.post('/enviar', (req,res)=>{
     })
     .then(()=> console.log('Enviado com sucesso'))
     .catch((err)=>console.log('Erro ao enviar email', err))
+    res.redirect('/index.html')
 })
 
 const PORT = process.env.PORT || 3000
