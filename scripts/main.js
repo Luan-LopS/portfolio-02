@@ -6,10 +6,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
     if (url === home) {
         var linkHome = document.querySelector('header .container nav ul li a href="' + homeAtivo + '"');
-        if (!linkHome) {
-            linkHome.classList.add('active')
-            console.log('OI')
-        }
     }
     
     // Verifica qual link do menu tem o mesmo href da página atual
@@ -17,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
         item.getAttribute('href')
         if (url == item) {
             item.classList.add('active');
+        }else {
+            linkHome.classList.add('active')
         }
     });
 });
