@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const home = 'https://luan-eight.vercel.app/'
     const homeAtivo = 'https://luan-eight.vercel.app/index.html'
 
+    var linkHome = null
     if (url === home) {
-        var linkHome = document.querySelector('header .container nav ul li a[href="' + homeAtivo + '"]');
+        linkHome = document.querySelector('header .container nav ul li a[href="' + homeAtivo + '"]');
     }
     
     // Verifica qual link do menu tem o mesmo href da página atual
