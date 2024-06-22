@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
         item.getAttribute('href')
         if (url == item) {
             item.classList.add('active');
+            linkHome.classList.remove('active')
+
         }else {
             linkHome.classList.add('active')
         }
