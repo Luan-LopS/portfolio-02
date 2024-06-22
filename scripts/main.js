@@ -2,9 +2,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
     // Obtém a URL da página atual
     var url = window.location.href;
     const home = 'https://luan-eight.vercel.app/'
-    const homeAtivo = 'https://luan-eight.vercel.app/index.html'
 
-    var linkHome = document.querySelector('header .container nav ul li a[href="' + homeAtivo + '"]');
+    var linkHome = document.querySelectorAll('header .container nav ul li a')[0];
    
     
     // Verifica qual link do menu tem o mesmo href da página atual
