@@ -3,9 +3,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
     var url = window.location.href;
     const home = 'https://luan-eight.vercel.app/'
     const homeAtivo = 'https://luan-eight.vercel.app/index.html'
+
     if (url === home || url === homeAtivo) {
         // Adiciona a classe 'active' ao link correspondente
-        document.querySelector('header .container nav ul li a[href="' + homeAtivo + '"]').classList.add('active');
+        var linkHome = document.querySelector('header .container nav ul li a[href="' + homeAtivo + '"]');
+        if (linkHome) {
+            linkHome.classList.add('active');
+        }
     }
     
     // Verifica qual link do menu tem o mesmo href da página atual
