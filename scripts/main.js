@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     if (url === home) {
         // Adiciona a classe 'active' ao link correspondente
         var linkHome = document.querySelector('header .container nav ul li a[href="' + homeAtivo + '"]');
-        if (linkHome) {
+        if (!linkHome) {
             linkHome.classList.add('active')
             console.log('OI')
 
