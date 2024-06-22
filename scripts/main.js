@@ -10,9 +10,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
     document.querySelectorAll('header .container nav ul li a').forEach(function(item) {
         item.getAttribute('href')
         if (url == item) {
-            item.classList.add('active');
             linkHome.classList.remove('active')
-
+            item.classList.add('active')
         }else {
             linkHome.classList.add('active')
         }
