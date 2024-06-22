@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', function(e) {
         // Adiciona a classe 'active' ao link correspondente
         var linkHome = document.querySelector('header .container nav ul li a[href="' + homeAtivo + '"]');
         if (linkHome) {
-            linkHome.classList.add('active');
+            linkHome.classList.add('active')
+            console.log('OI')
+
         }
-        console.log('OI')
     }
     
     // Verifica qual link do menu tem o mesmo href da página atual
