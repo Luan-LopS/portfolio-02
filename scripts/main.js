@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
         if (linkHome) {
             linkHome.classList.add('active');
         }
+        console.log('OI')
     }
     
     // Verifica qual link do menu tem o mesmo href da página atual
