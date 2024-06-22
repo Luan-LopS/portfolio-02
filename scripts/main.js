@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
         if (url == item) {
             item.classList.add('active');
         }else if(url1 == url){
-            item[0].classList.add('active');
+            item[1].classList.add('active');
         }
     });
 });
