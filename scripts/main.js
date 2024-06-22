@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function(e) {
     // Obtém a URL da página atual
     var url = window.location.href;
-    const url1 = 'https://luan-eight.vercel.app/';
+    const url1 = 'https://luan-eight.vercel.app/'
+    url1.classList.add('active')
 
     // Verifica qual link do menu tem o mesmo href da página atual
     document.querySelectorAll('header .container nav ul li a').forEach(function(item) {
         item.getAttribute('href')
         if (url == item) {
             item.classList.add('active');
-        }else if(url1 == url){
-            item[1].classList.add('active');
+            url1.classList.remove('active')
         }
     });
 });
