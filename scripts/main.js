@@ -5,12 +5,10 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const homeAtivo = 'https://luan-eight.vercel.app/index.html'
 
     if (url === home) {
-        // Adiciona a classe 'active' ao link correspondente
-        var linkHome = document.querySelector('header .container nav ul li a[href="' + homeAtivo + '"]');
+        var linkHome = document.querySelector('header .container nav ul li a href="' + homeAtivo + '"');
         if (!linkHome) {
             linkHome.classList.add('active')
             console.log('OI')
-
         }
     }
     
