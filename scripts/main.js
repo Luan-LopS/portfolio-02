@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
         item.getAttribute('href')
         if (url == item) {
             item.classList.add('active');
-        }else if(url1 == item){
+        }else if(url1 == url){
             item.classList.add('active');
         }
     });
