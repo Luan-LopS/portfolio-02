@@ -1,5 +1,9 @@
 section > h2{
-    margin: 5rem  0;
+    margin: 3rem  0;
+}
+
+.port{
+    width: 70%;
 }
 
 section article header{
@@ -8,8 +12,8 @@ section article header{
 
 .card{
     position: relative;
-    width: 20rem;
-    height: 35rem;
+    width: 16rem;
+    height: 30rem;
     margin: 2rem;
     overflow: hidden;
     border-radius: 10px;    

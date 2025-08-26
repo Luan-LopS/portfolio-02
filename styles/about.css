@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr 1fr ;
     gap: 3rem 2rem;
     height: 83vh;
-    margin-top: 3rem;
+    margin-top: 2rem;
     align-content: space-evenly;
     align-items: center;
     padding: 10px;
@@ -17,16 +17,16 @@
 
 .theme{
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 5px;
     flex-direction: column;
     position: relative;
     text-align: justify;
-    margin: 1rem 0;
+    margin: 0.8rem 0;
 }
 
 .theme2{
-    text-align: center;
+    width: 460px;
 }
 
 .theme > p, .theme ul{
@@ -49,7 +49,7 @@
 .title{
     width: 100%;
     justify-content: space-between;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .theme > .hr{
@@ -88,26 +88,26 @@
 }
 
 .stacks > ul{
-    align-items: center;
     width: 100%;
-    padding: 8px 0 ;
-}
-
-.stacks > ul li i{
-    font-size: 1.5rem;
-    width: 100%;
-    padding: 0 8px;
-}
-
-.stacks > ul li {
+    padding: 8px 0;
     font-size: 1.2rem;
     width: 100%;
 }
 
-.estudo{
+.stacks > ul li{
+    font-size: 0.9rem;
+}
+
+.study{
     color: #999999;
+    margin-bottom: 15px;
 }
 
 .themeEduca{
     width: 420px;
+}
+
+.icon{
+    width: 25px;
+    height: 80px;
 }
