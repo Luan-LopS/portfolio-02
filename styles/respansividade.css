@@ -15,6 +15,7 @@
         width: 80%;
    }
 
+
    .hero{
         margin-top: 3rem;
         flex-direction: column-reverse;
@@ -126,6 +127,10 @@
 
     .theme{
         font-size: 1rem;
+    }
+
+    .theme2{
+        width: 100%;
     }
 
     .habilit{
