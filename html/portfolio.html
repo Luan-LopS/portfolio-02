@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,102 +11,128 @@
     <!---font--->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 
 
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/6f9ded4e50.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
-<body>
-        <header>
-            <div class="container">
-                <h2><span>L</span>uan<span>L</span>op<span>S</span></h2>
-                <i class="menu fa-solid fa-bars"></i>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../html/about.html">Sobre</a></li>
-                        <li><a href="../html/portfolio.html">Portfolio</a></li>
-                        <li><a href="../html/contact.html">Contato</a></li>
-                    </ul>
-                </nav>
 
-                <div class="btn-contato">
-                    <a href="../html/contact.html">Contato</a>
+<body>
+    <header>
+        <div class="container">
+            <h2><span>L</span>uan<span>L</span>op<span>S</span></h2>
+            <i class="menu fa-solid fa-bars"></i>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/about.html">Sobre</a></li>
+                    <li><a href="../html/portfolio.html">Portfolio</a></li>
+                    <li><a href="../html/contact.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="../html/contact.html">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container flex port">
+        <h2>Principais <span>Projetos</span></h2>
+
+        <article class="flex portfolio">
+            <!-- Projeto 1 - Automatização Zabbix -->
+            <div class="card">
+                <div id="projeto1"></div>
+                <div class="cardText">
+                    <article>
+                        <h3>Automatização <span>para extração de alertas do Zabbix</span></h3>
+                        <p>
+                            Desenvolvi uma automação que extrai arquivos <code>.csv</code> do Zabbix, utilizados na
+                            confecção de relatórios em Excel para a rotina diária da equipe. O script realiza as
+                            seguintes tarefas:
+                        </p>
+                        <ol>
+                            <li>Abre uma interface gráfica para o usuário inserir login e senha.</li>
+                            <li>Com os dados, abre o navegador e realiza o login. Caso falhe, solicita as credenciais
+                                novamente.</li>
+                            <li>Após login bem-sucedido, realiza o download automático do arquivo <code>.csv</code>.
+                            </li>
+                            <li>O arquivo é consumido por uma planilha Excel que trata, organiza e estiliza os dados
+                                automaticamente.</li>
+                        </ol>
+                        <div class="btn flex">
+                            <div class="btn-contato"><a href="#" target="_blank">GitHub</a></div>
+                            <div class="btn-contato"><a href="#" target="_blank">Deploy</a></div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </header>
-        
-        <section class="container flex port">
-            <h2>Principais <span>Projetos</span></h2>
 
-            <article class="flex portfolio">
-                <div class="card">
-                    <div id="projeto1"></div>
-                    <div class="cardText">
-                        <article>
-                            <h3> Automatização<span> para estração de alertas</span> do Zabbix</h3>
-                            <p>
-                                Desenvolvi uma automatização de extração de um arquivo.csv que é utilizado na 
-                                confecção de um excel para realização da Dayle. Este escripte executa as tarefas:
-                            </p>
-                            <ol>
-                                <li>Iniciar uma interface gráfica para realizar o login passando usuário e senha.</li>
-                                <li>Com usuário e senha o executável abre o navegador e realiza o login, após isso
-                                    coloquei um try para verificar se foi realizado  o login caso não pede denovo o usuário
-                                    e senha.</li>
-                                <li>Login com sucesso é extraido o csv</li>
-                                <li>Após isso é consumido o csv pelo excel,  tratado e estilizado conforme o necessário.</li>
-                            </ol>
-                            <div class="btn flex">
-                                <div class="btn-contato"><a href="">GitHub</a></div>
-                                <div class="btn-contato"><a href="">deploy</a></div>
+            <!-- Projeto 2 - Full Stack Python -->
+            <div class="card">
+                <div id="projeto2"></div>
+                <div class="cardText">
+                    <article>
+                        <h3><span>Full Stack</span> Python</h3>
+                        <p>
+                            Desenvolvi uma aplicação web completa como desenvolvedor <strong>full stack</strong>,
+                            incluindo deploy em ambiente Linux. A arquitetura foi pensada para garantir performance e
+                            escalabilidade.
+                        </p>
+                        <ol>
+                            <li>Utilização do framework <strong>Django</strong> para criação do backend e frontend.</li>
+                            <li>Aplicação de HTML, CSS e JavaScript na camada visual.</li>
+                            <li>Instalação e configuração do sistema operacional Linux, incluindo o apontamento de 
+                                <strong>DNS para domínio externo</strong>.</li>
+                            <li>Deploy realizado com <strong>Nginx</strong> como proxy reverso e
+                                <strong>Uvicorn</strong> para rodar aplicações ASGI.</li>
+                        </ol>
+                        <div class="btn flex">
+                            <div class="btn-contato"><a href="#" target="_blank">GitHub</a></div>
+                            <div class="btn-contato"><a href="https://www.centerkapas.com/" target="_blank">Deploy</a>
                             </div>
-                        </article>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div id="projeto2"></div>
-                        <div class="cardText" >
-                            <article>
-                                <h3><span>FullStack</span> Python</h3>
-                                <p>
-                                    O projeto consiste um site de portifolio de uma loja de capas automotivas feita com Django,
-                                    desenvolvi o frontend, backend e a modelagem do banco de dados, um projeto simples para 
-                                </p>
-                                <ol>
-                                    <li></li>
-                                </ol>
-                                <div class="btn flex">
-                                    <div class="btn-contato"><a href="">GitHub</a></div>
-                                    <div class="btn-contato"><a href="">deploy</a></div>
-                                </div>
-                            </article>
                         </div>
+                    </article>
                 </div>
-    
-                <div class="card">
-                    <div id="projeto3"></div>
-                        <div class="cardText" >
-                            <article>
-                                <h3>Lorem ipsum dolor sit.</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                     elit. Saepe eius ex earum est quaerat vel alias natus, ipsum totam esse.
-                                </p>
-                                <div class="btn flex">
-                                    <div class="btn-contato"><a href="">GitHub</a></div>
-                                    <div class="btn-contato"><a href="">deploy</a></div>
-                                </div>
-                            </article>
+            </div>
+
+            <!-- Projeto 3 - Chatbot com IA -->
+            <div class="card">
+                <div id="projeto3"></div>
+                <div class="cardText">
+                    <article>
+                        <h3>Chatbot com  <span>IA</span></h3>
+                        <p>
+                            Planejei e desenvolvi um <strong>chatbot com Inteligência Artificial</strong> integrado ao
+                            WhatsApp e à plataforma Clincorp. O projeto envolveu integração de IA, backend e automação
+                            em ambiente Linux.
+                        </p>
+                        <ol>
+                            <li>Ambiente configurado em Linux com <strong>Ollama</strong> e modelo
+                                <strong>phi-4-mini</strong>.</li>
+                            <li>Comunicação entre backend e WhatsApp via <strong>webhook</strong> utilizando
+                                <strong>Ngrok</strong> e API do Z-API.</li>
+                            <li>Projeto entregue com foco em estabilidade, automação e experiência do usuário.</li>
+                        </ol>
+                        <div class="btn flex">
+                            <div class="btn-contato"><a href="#" target="_blank">GitHub</a></div>
+                            <div class="btn-contato"><a href="#" target="_blank">Deploy</a></div>
                         </div>
+                    </article>
                 </div>
-            </article>
-        </section>
+            </div>
+
+        </article>
+    </section>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -113,4 +140,5 @@
     <script src="../scripts/messages_pt_BR.min.js"></script>
     <script src="../scripts/main.js"></script>
 </body>
+
 </html>
